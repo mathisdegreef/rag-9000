@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*__pycache__
+*__init__.py
+
+# Build
+dist/
+build/
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.tmp
+*.swp
+*.pptx
+*.claude
+*.pytest_cache
+CLAUDE.md
