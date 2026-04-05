@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     # Model overrides
     parser.add_argument(
         "--bi-encoder-model",
-        default="sentence-transformers/all-MiniLM-L6-v2",
+        default="microsoft/harrier-oss-v1-0.6b",
         help="Sentence-transformers model for bi-encoder",
     )
     parser.add_argument(

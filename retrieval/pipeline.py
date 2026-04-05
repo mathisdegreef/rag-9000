@@ -137,7 +137,7 @@ def build_pipeline(
     config: PipelineConfig,
     store: DocumentStore,
     faiss_index_path: Optional[str] = None,
-    bi_encoder_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    bi_encoder_model: str = "microsoft/harrier-oss-v1-0.6b",
     cross_encoder_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2",
 ) -> RetrieverPipeline:
     """

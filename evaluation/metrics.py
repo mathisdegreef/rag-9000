@@ -71,7 +71,7 @@ def compute_metrics(
     recall = hits / n_rel
 
     # ---------- Precision@K ----------
-    precision = hits / len(retrieved_at_k) if retrieved_at_k else 0.0
+    precision = hits / k
 
     # ---------- Hit Rate@K ----------
     hit_rate = 1.0 if hits > 0 else 0.0

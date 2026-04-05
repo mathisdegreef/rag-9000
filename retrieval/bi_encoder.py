@@ -24,7 +24,7 @@ Usage
     retriever = BiEncoderRetriever(
         store=store,
         index_path="index.faiss",
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_name="microsoft/harrier-oss-v1-0.6b",
     )
     results = retriever.retrieve("what is machine learning?", top_k=10)
 """
@@ -72,7 +72,7 @@ class BiEncoderRetriever(BaseRetriever):
         self,
         store: DocumentStore,
         index_path: str,
-        model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
+        model_name: str = "microsoft/harrier-oss-v1-0.6b",
         normalize_embeddings: bool = True,
         is_l2_index: bool = False,
     ) -> None:
